@@ -1,0 +1,104 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.body {
+  font-family: "Alkalami", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #afb5b9;
+}
+
+.calculator {
+  position: relative;
+  width: 340px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px rgba(35, 22, 22, 0.733);
+}
+
+.calculator .buttons {
+  position: relative;
+  display: grid;
+}
+
+.calculator .buttons #value {
+  position: relative;
+  grid-column: span 4;
+  user-select: none;
+  overflow: none;
+  width: 100%;
+  text-align: end;
+  color: #000b46;
+  height: 100px;
+  line-height: 100px;
+  box-shadow: inset 5px 5px 10px rgba(249, 249, 249, 0.1), inset -5px -5px 20px #ebe9e9;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.calculator .buttons span {
+  position: relative;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fae4e4;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #666;
+  border: 2px solid #6dc0f7;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #1f0c0c;
+}
+
+.calculator .buttons span:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+  color: #ff0000;
+}
+
+.calculator .buttons span#clear {
+  grid-column: span 2;
+  background-color: #cd0909;
+  color: #ffffff;
+  border: 2px solid #75d118;
+}
+
+.calculator .buttons span#plus {
+  grid-row: span 2;
+  background-color: #209b01;
+  color: #fff9f9;
+  border: 2px solid #32fd27;
+}
+
+.calculator .buttons span#equal {
+  grid-row: span 2;
+  background-color: #05467c;
+  color: #fff;
+  border: 2px solid #2beb16;
+}
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active {
+  box-shadow: 5px 5px 10px rgb(143, 231, 66), -5px -5px 10px #2fe822,
+    inset 5px 5px 10px rgb(56, 165, 69);
+}
+
